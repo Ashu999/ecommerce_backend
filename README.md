@@ -2,7 +2,7 @@
 
 ## Setup Instructions
 
-1. Start the MySQL database using Docker:
+Make sure you have Docker Running:
 ```bash
 cp .env.example .env  # Fill the .env file with your credentials: SHOPIFY_SHOP_NAME, SHOPIFY_ACCESS_TOKEN
 
