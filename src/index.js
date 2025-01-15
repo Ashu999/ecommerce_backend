@@ -94,6 +94,7 @@ async function main() {
         console.log('Fetching products...');
         const products = await reader.getProducts();
         console.log(`Found ${products.length} products`);
+        console.log("Products: ", products);
 
         for (const product of products) {
             try {
