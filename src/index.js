@@ -23,13 +23,6 @@ const config = {
 class DatabaseManager {
     constructor() {
         this.pool = createPool(config.database);
-        this.client = axios.create({
-            baseURL: `https://${config.shopify.shopName}.myshopify.com/admin/api/${config.shopify.apiVersion}`,
-            headers: {
-                'X-Shopify-Access-Token': config.shopify.accessToken,
-                'Content-Type': 'application/json'
-            }
-        });
     }
 
     async saveProduct(product) {
